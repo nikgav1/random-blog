@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nikita Blog</title>
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="create.css">
+    </head>
+    <body>
+        <nav class="nav-flex">
+            <ul class="ul">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blogs">Blogs</a></li>
+                <li><a href="/create">Create Blog</a></li>
+            </ul>
+        </nav>
+        <form id="form" action="/login" method="POST">
+            <div id="names">
+                <span id="firstName1"> First name:</span><input type="text" placeholder="First name" name="firstName" class="input" id="firstName" autocomplete="false" required/>
+                <span id="lastName1"> Last name:</span><input type="text" placeholder="Last name" name="lastName" class="input" id="lastName" autocomplete="false" required/>
+                <span id="email1"> Email:</span><input type="text" placeholder="Email" name="email" class="input" id="email" autocomplete="false" required/>
+            </div>
+            <div id="text">
+                <div class="topic">Topic:</div>
+                <input type="text" placeholder="Topic" name="topic" id="topic" autocomplete="false" required/>
+                <div class="text">Text:</div>
+              <textarea  type="text" required placeholder="Text" name="text" id="text1" autocomplete="false"  cols="100" rows="100"></textarea>
+            </div>
+            <button type="submit" class="button-35">Submit</button>
+          </form>
+    </body>
+</html>
